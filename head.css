@@ -1,0 +1,39 @@
+#headTop {
+	position: static;
+	height: 300px;
+}
+#headBot {
+	position: static;
+	height: 300px;
+}
+
+#logo {
+	float:left;
+	top:0;
+	left:0;
+	width:20%;
+	height: 300px;
+}
+#casaMerci {
+	float: left;
+	top:0;
+	left:0;
+	width:60%;
+	height: 300px;
+} 
+#login {
+	float: left;
+	top:0;
+	right:0;
+	width:20%;
+	height: 300px;
+}
+
+#menu {
+	float: left;
+	top:0;
+	left: 0;
+	width: 100%;
+	height: 150px;
+}
+
