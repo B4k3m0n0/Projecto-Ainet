@@ -1,0 +1,55 @@
+#container{
+
+
+}
+
+#excertoPai{
+	border: 1px solid;
+}
+
+#excertoTable{
+	width: 70%;
+	position: relative;
+	margin: auto auto;
+	height: 200px;
+	border: 1px solid;
+
+}
+
+#publicacaoPai{
+	border: 1px solid;
+}
+
+#publicacaoContainer{
+	width: 80%;
+	margin: auto auto;
+	height: 150px;
+	background-color: green;
+}
+
+#publicacao1{
+	float: left;
+	height: 100%;
+	background: yellow;
+	width: 200px;
+}
+
+#publicacao2{
+	float: left;
+	/*padding: 0em 5em;*/
+	margin: 0em 5em;
+	height: 100%;
+	background: white;
+	width: 500px;
+}
+
+#publicacao3{
+	height: 100%;
+	background: blue;
+	margin-left: 800px;
+}
+
+img {
+	width: relative;
+	height: relative;
+}
