@@ -1,0 +1,89 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+	<title>Casa da Misericórdia de Leiria</title>
+	<meta http-equiv="content-type" content="text/html;charset=utf-8"/>
+	<link rel="stylesheet" type="text/css" href="head.css" />
+</head>
+<body>
+
+	<div id="conteudo" >
+		<div id="contactos">
+			<h3>Telefones: </h3>
+			<ul class="telmail" > 
+				<li>Quartel Sede: 244881120 (emergência), 244882015 (geral), 244861991 (FAX) ;</li>
+				<li>Quartel 5.ª Companhia de Monte Redondo: 244685800, 244685970 (FAX) ;</li>
+				<li>Quartel 6ª. Companhia Sul do Concelho: 244745871, 244741991 (FAX):</li>
+				
+			</ul>
+			<br />
+			<h3>E-mails: </h3>
+			<ul class="telmail">
+				<li>geral@bvleiria.pt (Leiria)</li>
+				<li>5companhia@bvleiria.pt (Monte Redondo)</li>
+				<li>6companhia@bvleiria.pt (Cardosos)</li>
+			</ul>
+			<br />
+			<h3>Morada: </h3>
+			
+			<ul>
+				<li>Rua da Liberdade</li>
+				<li>Leiria</li>
+				<li>2415-560 Outeiros da Gândara</li>
+			</ul>
+		</div>
+		<span id="">
+			<form id="" action="<?php echo $_SERVER['PHP_SELF']; ?>" method="post">
+				<fieldset>
+					<legend>Sugestões e Reclamações</legend>
+					<table>
+						<tr>
+							<td><label for="tipo_cont">Tipo de Contacto: </label></td>
+							<td>
+								<input type="radio" name="tipo_cont" value="0"/>Sugestão
+								<input type="radio" name="tipo_cont" value="1"/>Reclamação
+							</td>
+						</tr>
+						<tr>
+							<td><label for="tipo_ass">Tipo de Assunto: </label></td>
+							<td>
+								<input type="radio" name="tipo_ass" value="0"/>Serviço Efectuado
+								<input type="radio" name="tipo_ass" value="1"/>Sitio Web
+								<input type="radio" name="tipo_ass" value="2"/>Recrutamento
+								<input type="radio" name="tipo_ass" value="3"/>Formação
+							</td>
+						</tr>
+
+						<tr>
+							<td><label for="emailContact">E-mail para contacto: </label></td>
+							<td>
+								<input type="text" id="emailContact" name="emailContact"/>
+							</td>
+
+						</tr>
+
+						<tr>
+							<td><label for="assunto">Assunto: </label></td>
+							<td>
+								<textarea name="assunto" rows="10" cols="48"></textarea>
+							</td>
+
+						</tr>
+						<tr>
+							<td colspan="2">
+								<input type="submit" value="Submeter" name="submitSugestaoR"/>
+							</td>
+						</tr>
+						<tr>
+							<td colspan="2"><span style="font-weight: bold">Nota: </span><span>Todos os campos são obrigatórios</span></td>
+						</tr>
+
+					</table>
+				</fieldset>
+			</form> </span>
+		</div>
+
+	</body>
+	</html>

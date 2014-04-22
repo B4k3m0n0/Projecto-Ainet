@@ -1,39 +1,100 @@
 #headTop {
 	position: static;
-	height: 300px;
-}
-#headBot {
-	position: static;
-	height: 300px;
+	height: 10px;
+	padding-top: 10px;
 }
 
 #logo {
 	float:left;
-	top:0;
-	left:0;
-	width:20%;
-	height: 300px;
+	width:10%;
+	padding-left: 10%;
 }
 #casaMerci {
 	float: left;
 	top:0;
 	left:0;
-	width:60%;
-	height: 300px;
+	width:39%;
+	padding-left: 11%;
+	padding-top: 15px;
 } 
 #login {
 	float: left;
 	top:0;
 	right:0;
-	width:20%;
-	height: 300px;
+	width:10%;
+}
+
+#formLogin {
+	width: 200px;
+	padding-top: 50px;
 }
 
 #menu {
-	float: left;
-	top:0;
-	left: 0;
-	width: 100%;
-	height: 150px;
+	width: 1250px;
+	height: 50px;
+}
+#menu ul{
+	list-style-type: none;
 }
 
+#barraNav li a {
+	float: left;
+	padding: 15px 0px;
+	text-decoration: none;
+	color: black;
+}
+#barraNav > li:first-child {
+	padding-left: 150px;
+}
+#barraNav > li > a > span {
+
+	white-space: nowrap;
+	cursor: pointer;
+	font-size: 15px;
+	text-transform: uppercase;
+	padding: 3px 25px 11px;
+	font-family: Comic;
+}
+
+#menu span:hover {
+	color: gray;
+	/*font-weight: bolder;*/
+}
+
+#menu ul li {
+	float: left;
+}
+
+#menu li ul {
+	position: absolute;
+	visibility: hidden;
+	margin-top: 0px;
+}
+
+#menu ul li ul li a {
+	clear: both;
+	margin-left: 4px;
+	position: relative;
+	width: 140px;
+	background-color: white;
+	/*border-bottom: 1px solid #311313;
+	border-left: 1px solid #311313;*/
+	padding-top: 5px;
+	left: -45px;
+	height: 10px;
+	font-size: 15px;
+	text-transform: uppercase;
+}
+#menu ul li ul {
+	display: block;
+	width: 127px;
+}
+#menu li:hover > ul {
+	visibility: visible;
+	margin-left: 2px;
+	margin-top: 50px;
+}
+
+#menu p{
+	padding-left: 150px;
+}
