@@ -3,87 +3,204 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 
 <head>
-	<title>Casa da Misericórdia de Leiria</title>
+	<title>Santa Casa da Misericórdia de Leiria</title>
 	<meta http-equiv="content-type" content="text/html;charset=utf-8"/>
 	<link rel="stylesheet" type="text/css" href="head.css" />
 </head>
 <body>
+	<link rel="stylesheet" type="text/css" href="head.css" />
+
+
+	<script type="text/javascript" src="jquery.min.js"></script>
+	<script type="text/javascript" charset="UTF-8">
+			//<![CDATA[
+			$(document).ready(function ()
+			{
+
+				$("#menu li").bind	("mouseenter mouseleave", function ()	{
+					$(this).toggleClass("over");
+				}
+				);
+			})
+			
+
+			//]]
+			function prepareList() {
+				$('#expList').find('li:has(ul)')
+				.click( function(event) {
+					if (this == event.target) {
+						$(this).toggleClass('expanded');
+						$(this).children('ul').toggle('medium');
+					}
+					return false;
+				})
+				.addClass('collapsed')
+				.children('ul').hide();
+			};
+
+			$(document).ready( function() {
+				prepareList()
+			});
+			</script>
+
+		</head>
+
+
+		<body>
+
+			<div id="headTop">
+				<div border=1 id="logo">
+					<a href="head.html"><img src="imagens\santa_casa1000.png" alt="logo" height="225" width="250"></a>
+				</div>
+
+				<div border=1 id="casaMerci">
+					<img src="imagens\santaCasa.jpg" alt="casa" height="200" width="500">
+				</div>
+
+				<div id="login">
+					<form method="post" action="" id="formLogin">
+						<fieldset>
+							<legend>Autenticação:</legend>
+							<table>
+								<tr>
+									<td><label for="user">Username:</label></td>
+									<td><input type="text" id="user" name="user"/></td>
+								</tr>
+								<tr>
+									<td><label for="pass">Password:</label></td>
+									<td><input type="password" id="pass" name="pass" /></td>
+								</tr>
+								
+								<tr><td colspan="2"><input type="submit" value="Login" /> <input type="submit" value="Registar" /></td></tr>
+							</table>
+						</fieldset>
+						
+					</form>
+				</div>
+
+			</div>
+			<div id="menu">
+				<p>________________________________________________________________________________________________________________________________________</p>
+				<ul id="barraNav">
+					<li>
+						<a href=""><span>Entrada</span></a>
+					</li>
+					<li>
+						
+						<a href=""><span>Valência</span></a>
+						<ul >
+							<li>
+								<a href=""><span>Irmandade</span></a>
+							</li>
+
+							<li>
+								<a href=""><span>Creche</span></a>
+							</li>
+							<li>
+								<a href=""><span>Cuidados Geriátricos</span></a>
+							</li>
+						</ul>
+					</li>
+					<li>
+						<a href=""><span>Médicos</span></a>
+					</li>
+					<li>
+						<a href=""><span>Artigo/Noticia</span></a>
+					</li>
+					<li>
+						<a href=""><span>Marcação de Consulta</span></a>
+					</li>
+					<li>
+						<a href=""><span>Especialidades</span></a>
+					</li>
+					<li>
+						<a href="contactos.html" id="refcontacts"><span>Contactos</span></a>
+					</li>
+				</ul>
+				<p>________________________________________________________________________________________________________________________________________</p>
+			</div>
+
+
+	
 
 	<div id="conteudo" >
+		<h1>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Contactos</h1>
 		<div id="contactos">
-			<h3>Telefones: </h3>
-			<ul class="telmail" > 
-				<li>Quartel Sede: 244881120 (emergência), 244882015 (geral), 244861991 (FAX) ;</li>
-				<li>Quartel 5.ª Companhia de Monte Redondo: 244685800, 244685970 (FAX) ;</li>
-				<li>Quartel 6ª. Companhia Sul do Concelho: 244745871, 244741991 (FAX):</li>
+			<h3>Santa Casa da Misericórdia de Leiria: </h3>
+			<ul id="expList" > 
+				<p>Instituição Particular de Solidariedade Social Sede:</p>
+				<li>Morada: Rua Trindade Coelho, 8 Apartado 1109, 2401-801 Leiria;</li>
+				<li>Tel.: 244 106 202 • Fax: 244 106 298;</li>
+				<li>E-mail: <a href="mailto:geral@misericordiadeleiria.pt">geral@misericordiadeleiria.pt</a><br /></li>
 				
 			</ul>
 			<br />
-			<h3>E-mails: </h3>
-			<ul class="telmail">
-				<li>geral@bvleiria.pt (Leiria)</li>
-				<li>5companhia@bvleiria.pt (Monte Redondo)</li>
-				<li>6companhia@bvleiria.pt (Cardosos)</li>
+			<h3>Lar Nossa Sra. da Encarnação:</h3>
+			<ul class="telmail" > 
+				<li>Morada: Rua Nossa Sra. da Encarnação, 2414-004 LEIRIA;</li>
+				<li>Tel.: 244 827 400 • Fax: 244 823 980;</li>
+				<li>E-mail: <a href="mailto:geral@misericordiadeleiria.pt">geral@misericordiadeleiria.pt</a><br /></li>
 			</ul>
 			<br />
-			<h3>Morada: </h3>
-			
-			<ul>
-				<li>Rua da Liberdade</li>
-				<li>Leiria</li>
-				<li>2415-560 Outeiros da Gândara</li>
+
+			<h3>Clínica Médica e de Reabilitação:</h3>
+			<ul class="telmail" > 
+				<li>Morada: Rua Nossa Sra. da Encarnação, 2414-004 LEIRIA;</li>
+				<li>Tel.: 244 824 484 • Fax: 244 823 980;</li>
+				<li>E-mail: <a href="mailto:geral@misericordiadeleiria.pt">geral@misericordiadeleiria.pt</a><br /></li>
 			</ul>
+			<br />
+
+			<h3>Hospital Dom Manuel de Aguiar:</h3>
+			<ul class="telmail" > 
+				<li>Morada: Rua Conde Ferreira, 2410-189 LEIRIA;</li>
+				<li>Tel.: 244 100 009 • Fax: 244 106 299;</li>
+				<li>E-mail: <a href="mailto:geral@misericordiadeleiria.pt">geral@misericordiadeleiria.pt</a><br /></li>
+				<ul>
+					<h4>Unidade Cirúrgica:</h4>
+					<li>Tel.: 244 106 203</li>
+					<h4>Unidade Cuidados Continuados:</h4>
+					<li>Tel.: 244 106 204 (24 HORAS)</li>
+					<h4>Recepção Administrativa Central:</h4>
+					<li>Tel.: 244 106 201</li>
+				</ul>
+			</ul>
+			<br />
+
+			<h3>Creche "Casa Sanches":</h3>
+			<ul class="telmail" > 
+				<li>Morada: Rua Trindade Coelho, 10 2410-189 LEIRIA;</li>
+				<li>Tel.: 244 100 009 • Tm: 915 190 685 • Fax: 244 106 298;</li>
+				<li>E-mail: <a href="mailto:geral@misericordiadeleiria.pt">geral@misericordiadeleiria.pt</a><br /></li>
+			</ul>
+			<br />
+
+			<h3>Residencial XXI:</h3>
+			<ul class="telmail" > 
+				<li>Morada: Rua do Lis, 2410-126 LEIRIA;</li>
+				<li>Tel.: 244 106 300 • Fax: 244 106 298;</li>
+				<li>E-mail: <a href="mailto:geral@misericordiadeleiria.pt">geral@misericordiadeleiria.pt</a><br /></li>
+			</ul>
+			<br />
+
 		</div>
-		<span id="">
-			<form id="" action="<?php echo $_SERVER['PHP_SELF']; ?>" method="post">
-				<fieldset>
-					<legend>Sugestões e Reclamações</legend>
-					<table>
-						<tr>
-							<td><label for="tipo_cont">Tipo de Contacto: </label></td>
-							<td>
-								<input type="radio" name="tipo_cont" value="0"/>Sugestão
-								<input type="radio" name="tipo_cont" value="1"/>Reclamação
-							</td>
-						</tr>
-						<tr>
-							<td><label for="tipo_ass">Tipo de Assunto: </label></td>
-							<td>
-								<input type="radio" name="tipo_ass" value="0"/>Serviço Efectuado
-								<input type="radio" name="tipo_ass" value="1"/>Sitio Web
-								<input type="radio" name="tipo_ass" value="2"/>Recrutamento
-								<input type="radio" name="tipo_ass" value="3"/>Formação
-							</td>
-						</tr>
-
-						<tr>
-							<td><label for="emailContact">E-mail para contacto: </label></td>
-							<td>
-								<input type="text" id="emailContact" name="emailContact"/>
-							</td>
-
-						</tr>
-
-						<tr>
-							<td><label for="assunto">Assunto: </label></td>
-							<td>
-								<textarea name="assunto" rows="10" cols="48"></textarea>
-							</td>
-
-						</tr>
-						<tr>
-							<td colspan="2">
-								<input type="submit" value="Submeter" name="submitSugestaoR"/>
-							</td>
-						</tr>
-						<tr>
-							<td colspan="2"><span style="font-weight: bold">Nota: </span><span>Todos os campos são obrigatórios</span></td>
-						</tr>
-
-					</table>
-				</fieldset>
-			</form> </span>
-		</div>
+		
+		<ul>
+                        <li>
+                            Assembleia Geral:
+                             <ul>
+                        		<li>
+                            		<span>Presidente - António Pereira Fernandes </span>
+                       			</li>
+                       			<li>
+                            		<span>1.º Secretário - José Oliveira Carvalho, Mj</span>
+                       			</li>
+                       			<li>
+                            		<span>2.º Secretário - Rui César Cordeiro Ferrinho Ervilha</span>
+                       			</li>
+                    		</ul>
+                    	</li>
+        </ul>
 
 	</body>
 	</html>
