@@ -4,7 +4,6 @@
 
 #excertoPai{
 	width: 70%;
-	border: 1px solid;
 	margin: auto auto;
 }
 
@@ -13,47 +12,48 @@
 	position: relative;
 	margin: auto auto;
 	height: 200px;
-	border: 1px solid;
 
 }
 
 #publicacaoPai{
-	border: 1px solid;
 }
 
 #publicacaoContainer{
 	width: 70%;
 	margin: auto auto;
-	height: 150px;
-	background-color: green;
+	height: 400px;
+}
+
+.pub{
+	background-color: white;
+	border-radius: 10px; 
+	-moz-border-radius: 10px; 
+	-webkit-border-radius: 10px; 
+	border: 2px solid #104285;
+	padding: 10px 10px;
+	margin: 0;
+	overflow: auto;
+    display: block;
+    height: 350px;
+    width:23%;
 }
 
 #publicacao1{
 	float: left;
-	height: 100%;
-	background: yellow;
-	width:calc(80%/3);
 }
 
 #publicacao2{
 	float: left;
-	height: 100%;
-	background: white;
-	width:calc(80%/3);
 }
 
 #publicacao3{
 	float: left;
-	height: 100%;
-	background: blue;
-	width:calc(80%/3);
 }
 
 #separador{
 	float: left;
 	height: 100%;
 	width: 10%;
-	background: purple;
 }
 
 #apresentacaoPai{
