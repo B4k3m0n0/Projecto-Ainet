@@ -25,22 +25,6 @@
 			
 
 			//]]
-			function prepareList() {
-				$('#expList').find('li:has(ul)')
-				.click( function(event) {
-					if (this == event.target) {
-						$(this).toggleClass('expanded');
-						$(this).children('ul').toggle('medium');
-					}
-					return false;
-				})
-				.addClass('collapsed')
-				.children('li').hide();
-			};
-
-			$(document).ready( function() {
-				prepareList()
-			});
 			</script>
 
 		</head>
@@ -79,7 +63,6 @@
 				</div>
 
 			</div>
-		</br>
 			<div id="menu">
 				<p>________________________________________________________________________________________________________________________________________</p>
 				<ul id="barraNav">
