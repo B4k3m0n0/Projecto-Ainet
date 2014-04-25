@@ -1,0 +1,14 @@
+
+#container{
+	display: table;
+	width: 700px;
+	margin: auto auto;
+	padding: 10px;
+	border: 1px solid #454545;
+	border-radius: 10px;
+}
+
+.formulario td{
+	padding-bottom: 10px;
+}
+

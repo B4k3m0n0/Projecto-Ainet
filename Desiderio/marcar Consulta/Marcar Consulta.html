@@ -1,0 +1,161 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+	<title>Marcar Consulta</title>
+	<meta http-equiv="content-type" content="text/html;charset=utf-8"/>
+	<style type="text/css">@import url(classes/jscalendar/calendar-win2k-cold-1.css);</style>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<script src="jqueryCalendar/jquery-1.6.2.min.js"></script>
+	<script src="jqueryCalendar/jquery-ui-1.8.15.custom.min.js"></script>
+	<link rel="stylesheet" href="jqueryCalendar/jqueryCalendar.css">
+	<script>
+		jQuery(function() {
+			jQuery("#data_nascimento").datepicker();
+			jQuery("#data_pretendida").datepicker();
+		});
+	</script>
+<body>
+    <div id="container">
+		<div id="head">
+			<h3>Marcação de Consultas</h3>
+		</div>
+		<p>"Aqui pode efetuar o pedido de marcação de uma consulta. <br>
+			Este  procedimento carece de validação.<br>
+			Obrigado!"<br>
+		</p>
+		<form action="">
+			<table class="formulario">
+				<tbody>
+					<tr>
+						<td>
+							<label for="nome">Nome *</label>
+							<br>
+							<input type="text" name="nome" id="nome" value="" size="40" maxlength="150">
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<label for="morada">Morada</label>						
+							<br>
+							<textarea name="morada" id="morada" rows="4" cols="40"></textarea>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<label for="data_nascimento">Data de Nascimento *</label>
+							<br>
+							<input type="text" name="data_nascimento" id="data_nascimento" value="" size="10" maxlength="10">
+							
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<label for="email">E-mail</label>
+							<br>						
+							<input type="text" name="email" id="email" value="" size="40" maxlength="100">
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<label for="telef">Telefone *</label>
+							<br>
+							<input type="text" name="telef" id="telef" value="" size="20" maxlength="20">
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<label for="consulta_id">Consulta *</label>
+							<br>			
+							<select name="consulta_id" id="consulta_id">
+								<option value="">--- Seleccione ---</option>
+								<option value="10">Acupunctura</option>
+								<option value="11">Cardiologia</option>
+								<option value="12">Cirurgia Geral</option>
+								<option value="13">Cirurgia Plástica e Reconstrutiva</option>
+								<option value="14">Cirurgia Vascular</option>
+								<option value="15">Dermatologia</option>
+								<option value="16">Diabetes</option>
+								<option value="17">Dietista</option>
+								<option value="18">Endocrinologia</option>
+								<option value="19">Estomatologia</option>
+								<option value="20">Gastrenterologia</option>
+								<option value="21">Ginecologia</option>
+							</select>					
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<label for="medico_id">Medico</label>
+							<br>			
+							<select name="medico_id" id="medico_id">
+								<option value="">--- Seleccione ---</option>
+								<option value="30">Dr Zé</option>
+								<option value="31">Dr Manel</option>
+								<option value="32">Dr Ana</option>
+								<option value="33">Dr José</option>
+								<option value="34">Dr Catarina</option>
+							</select>					
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<label for="data_pretendida">Data pretendida</label>
+							<br>
+							<input type="text" name="data_pretendida" id="data_pretendida" value="" size="10" maxlength="10">
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<label for="sistema_saude_id">Hora pretendia </label>
+							<br>
+							<select name="sistema_saude_id" id="sistema_saude_id">
+								<option value="">--- Seleccione ---</option>
+								<option value="1">10h</option>
+								<option value="2">10h30m</option>
+								<option value="3">11h</option>
+								<option value="4">11h30m</option>
+								<option value="5">12h</option>
+								<option value="6">12h30m</option>
+							</select>					
+						</td>
+					</tr>
+				</tbody>
+			</table>
+			<table class="botoesform">
+				<tbody>
+					<tr>
+						<td align="center">
+							<input type="reset" value="Limpar" class="btn">
+						</td>
+						<td align="center">
+							<input type="submit" value="Submeter" class="btn">
+						</td>
+					</tr>
+				</tbody>
+			</table>
+			<div class="form_nota">
+				<p>(*) campos obrigatórios</p>
+				<strong>Nota:</strong> No dia da consulta deve ser portador dos Meios Complementares de Diagnóstico e/ou Terapêutica recentes que dispuser.<br>
+					Deve ser igualmente portador do Cartão de Utente do SNS e/ou do Cartão da Entidade Financeira Responsável (Termos de Responsabilidade e/ou Credenciais, quando aplicável).
+			</div>
+			<input type="hidden" name="_comp" value="">
+			<input type="hidden" name="id" value="1643">
+		</form>		
+		<script type="text/javascript">
+			function valida(){
+				var grava=true;
+				if (_strip_whitespace(document.getElementById('nome').value)=='') { alert('Tem de introduzir (Nome)!'); grava=false; }
+					else  if (_strip_whitespace(document.getElementById('data_nascimento').value)=='') { alert('Tem de introduzir (Data de Nascimento)!'); grava=false; }
+					else  if (_strip_whitespace(document.getElementById('email').value)!='' && !valida_email(document.getElementById('email').value)) { alert('O campo (E-mail) tem de ser v�lido!'); grava=false; }
+					else  if (_strip_whitespace(document.getElementById('telef').value)=='') { alert('Tem de introduzir (Telefone)!'); grava=false; }	
+				return grava;
+			}
+		</script>
+		<noscript>
+			É necessário activar o javascript no seu browser.
+		</noscript>
+</div>
+</body>
+</html>
