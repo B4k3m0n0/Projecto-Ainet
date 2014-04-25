@@ -17,17 +17,12 @@ body{
 }
 
 #publicacaoPai{
-	width: 100%;
-	background: green;
-	min-height: 400px;
+	float: clear;
 }
 
 #publicacaoContainer{
-	width: 70%;
-	height: 100%;
+	width: 80%;
 	margin: auto auto;
-	background: green;
-	height: 350px;
 }
 
 .pub{
@@ -37,11 +32,12 @@ body{
 	-webkit-border-radius: 10px; 
 	border: 2px solid #104285;
 	padding: 10px 10px;
-	margin: 0;
+	margin: 50px;
 	overflow: auto;
     display: block;
-    height: 90%;
+    height: 375px;
     width:250px;
+
 }
 
 #publicacao1{
@@ -83,6 +79,7 @@ body{
 	height: 100%;
 	background: black;
 	width: 45%;
+	height: 400px;
 }
 
 #valencias{
