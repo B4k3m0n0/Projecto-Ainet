@@ -3,7 +3,7 @@ body {
 }
 
 #container{
-	width: 80%;
+	width: 1200px;
 	margin: auto auto;
 }
 
@@ -15,28 +15,32 @@ body {
 
 #conteudo{
 	height: 500px;
-	background: blue;
 }
 
 #imagem{
 	float: left;
 	width: 50%;
 	height: 500px;
-	background: yellow;
+	position: relative;
+}
+
+img{
+	width: 550px;
+	height: auto;
 }
 
 #texto{
 	float: left;
 	width: 50%;
 	height: 400px;
-	background: green;
+	position: relative;
 }
 
 #autores{
 	float: right;
 	width: 50%;
 	height: 100px;
-	background: pink;
+	position: relative;
 }
 
 input, textarea, a{
@@ -60,11 +64,20 @@ textarea {
     display: inline-block;
 }
 
-#corpo {
+#textA {
 	vertical-align: top;
 }
 
 a {
 	text-decoration: none;
 	color: black;
+}
+
+#submeter{
+	cursor: pointer;
+}
+
+h1{
+	color: rgba(28, 124, 183, 1);
+	font-family: verdana;
 }
