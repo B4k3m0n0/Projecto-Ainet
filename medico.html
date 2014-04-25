@@ -1,0 +1,215 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+	<title>Casa da Misericórdia de Leiria</title>
+	<meta http-equiv="content-type" content="text/html;charset=utf-8"/>
+	<link rel="stylesheet" type="text/css" href="head.css" />
+
+	<script type="text/javascript" src="jquery.min.js"></script>
+	<script type="text/javascript" charset="UTF-8">
+			//<![CDATA[
+			$(document).ready(function ()
+			{
+
+				$("#menu li").bind	("mouseenter mouseleave", function ()	{
+					$(this).toggleClass("over");
+				}
+				);
+			})
+
+
+			$(document).ready(function ()
+			{
+
+				$("#menu li").bind	("mouseenter mouseleave", function ()	{
+					$(this).toggleClass("over");
+				}
+				);
+			})
+
+			
+			//]]
+			</script>
+
+			<style type="text/css">
+.tg  {border-collapse:collapse;border-spacing:0;}
+.tg td{font-family:Arial, sans-serif;vertical-align: top;}
+.tg th{font-family:Arial, sans-serif;vertical-align: top;}
+.tg .foto{width: 200px; height: 200px;}
+.tg .nome{font-size:26px;font-family:"Lucida Sans Unicode", "Lucida Grande", sans-serif !important; width: 300px; height: 50px;}
+.tg .especialidade{font-size:13px;font-family:"Lucida Sans Unicode", "Lucida Grande", sans-serif !important; width: 300px; height: 120px;}
+.pub{
+	float: left;
+	background-color: white;
+	border-radius: 10px; 
+	-moz-border-radius: 10px; 
+	-webkit-border-radius: 10px; 
+	border: 2px solid #104285;
+	padding: 10px 10px;
+	margin: 50px 22px;
+	overflow: auto;
+    display: block;
+    height: 375px;
+    width: 250px;
+}
+#medico{
+	padding-left: 400px;
+}
+
+#publicacaoContainer{
+	padding-left: 190px
+}
+</style>
+</head>
+
+
+
+<body>
+
+	<div id="headTop">
+		<div border=1 id="logo">
+			<a href="head.html"><img src="imagens\santa_casa1000.png" alt="logo" height="225" width="250"></a>
+		</div>
+
+		<div border=1 id="casaMerci">
+			<img src="imagens\santaCasa.jpg" alt="casa" height="200" width="500">
+		</div>
+
+		<div id="login">
+			<form method="post" action="" id="formLogin">
+				<fieldset>
+					<legend>Autenticação:</legend>
+					<table>
+						<tr>
+							<td><label for="user">Username:</label></td>
+							<td><input type="text" id="user" name="user"/></td>
+						</tr>
+						<tr>
+							<td><label for="pass">Password:</label></td>
+							<td><input type="password" id="pass" name="pass" /></td>
+						</tr>
+
+						<tr><td colspan="2"><input type="submit" value="Login" /> <input type="submit" value="Registar" /></td></tr>
+					</table>
+				</fieldset>
+
+			</form>
+		</div>
+
+	</div>
+	<div id="menu">
+		<p>________________________________________________________________________________________________________________________________________</p>
+		<ul id="barraNav">
+			<li>
+				<a href=""><span>Entrada</span></a>
+			</li>
+			<li>
+
+				<a href=""><span>Saúde</span></a>
+				<ul >
+					<li>
+						<a href=""><span>Lista de Especialidades</span></a>
+					</li>
+
+					<li>
+						<a href=""><span>Corpo Clinico</span></a>
+					</li>
+					<li>
+						<a href=""><span>Artigos/Notícias Clínicas</span></a>
+					</li>
+					<li>
+						<a href=""><span>Marcação de Consultas</span></a>
+					</li>
+					<li>
+						<a href=""><span>Confirmação Marcações</span></a>
+					</li>
+				</ul>
+			</li>
+			<li>
+				<a href=""><span>Creche</span></a>
+			</li>
+			<li>
+				<a href=""><span>Cuidados  <br /> Geriátricos</span></a>
+				<ul >
+					<li>
+						<a href=""><span>Residencial</span></a>
+					</li>
+					<li>
+						<a href=""><span>Lar</span></a>
+					</li>
+					<li>
+						<a href=""><span>Internamento</span></a>
+					</li>
+					<li>
+						<a href=""><span>Apoio Domiciliário</span></a>
+					</li>
+				</ul>
+			</li>
+
+			<li>
+				<a href=""><span>Irmandade</span></a>
+			</li>
+			<li>
+				<a href="contactos.html" id="refcontacts"><span>Contactos</span></a>
+			</li>
+			<li>
+				<a><span class="negado">Pessoal</span></a>
+			</li>
+			<li>
+				<a><span class="negado">Médico</span></a>
+			</li>
+			<li>
+				<a><span class="negado">Gestão de <br /> Utilizadores</span></a>
+			</li>
+		</ul>
+		<p>________________________________________________________________________________________________________________________________________</p>
+	</div>
+
+	<div id="medico">
+		<table class="tg">
+			<tr>
+				<th class="nome" colspan="3"><p> Dr. Secundino de Freitas</p></th>
+			</tr>
+			<tr>
+				<td class="foto" rowspan="2"><img src="imagens/exemplo.png" height=210px width=210px></td>
+			</tr>
+			<tr>
+				<td class="especialidade" colspan="2" style="padding-left: 40px;" >
+					<select >
+						<option value="teste1">Especialidade 1</option>
+						<option value="teste2">Especialidade 2</option>
+						<option value="teste3">Especialidade 3</option>
+					</select>
+					<br /></br/>
+					<span>Disponibilidade:</span>
+					<br /><br />
+					<span>Segundas: </span>
+					<span>13 às 16</span>
+					<br />
+					<span>Terças: </span>
+					<br />
+					<span>Quartas: </span>
+					<br />
+					<span>Quintas: </span>
+					<br />
+					<span>Sextas: </span>
+					<br />
+					<span>Sábados: </span>
+					<br />
+					<br>
+					<input type="submit" value="Marcar Consulta" />
+				</td>
+			</tr>
+		</table>	
+	</div>
+
+
+	<div id="publicacaoContainer">
+		<article id="publicacao1" class="pub"></article>
+		<article id="publicacao2" class="pub"></article>
+		<article id="publicacao3" class="pub"></article>
+
+	</div>
+</body>
