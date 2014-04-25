@@ -151,7 +151,8 @@
 	font-family: Verdana;
 	font-size: 14px;
 	background-color: #00FFFF;
-	
+	position: relative;
+	clear: both;
 }
 
 .rodape_esq {
@@ -207,4 +208,10 @@
 
 #publicacaoContainer{
 	padding-left: 190px
+}
+
+#total2{
+	width: 1200px;
+	position: relative;
+	background: red;
 }
