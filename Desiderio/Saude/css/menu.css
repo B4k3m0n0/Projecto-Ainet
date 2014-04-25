@@ -1,4 +1,4 @@
-ul#nav {
+#nav {
 	background-color: #f1f7ff;
     border: 1px solid #454545;
 	border-radius: 10px;
@@ -8,7 +8,7 @@ ul#nav {
     padding: 15px;
     width: 160px;
 }
-ul#nav li {
+#nav li {
     background-color:#d9e1ec;
     border: 1px solid #454545;
 	border-radius: 10px;
@@ -17,13 +17,13 @@ ul#nav li {
     overflow: hidden;
 	
 }
-ul#nav li:hover {
+#nav li:hover {
     background:#BEDCFF;
 	text-decoration: underline;
 	cursor: pointer;
 	
 }
-ul#nav a {
+#nav a {
     border-style: none;
     border-width: 0;
     color: #181818;
@@ -33,6 +33,10 @@ ul#nav a {
 	vertical-align: middle;
 	text-decoration: none;	
 }
+#menuAcordos{
+	margin: 5px;
+	padding: 4px;
+}
 #menuAcordos li{
 	background-color:#d9e1ec;
     border: 1px solid #454545;
@@ -41,6 +45,13 @@ ul#nav a {
     margin-bottom: 5px;
     overflow: hidden;
 }
+#menuAcordos li:hover {
+    background:#BEDCFF;
+	text-decoration: underline;
+	cursor: pointer;
+	
+}
+
 #menuAcordos a {
     border-style: none;
     border-width: 0;

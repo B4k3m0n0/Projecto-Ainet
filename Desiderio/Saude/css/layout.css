@@ -53,14 +53,21 @@ body {
 }
 #doutores{
 	float: left;
-	margin-right: 280px;
+	margin-right: 60px; 
 }
-#doutor{
+#doutorEsq{
+	float: left;
 	background: #f1f7ff;
 	display: table;
 	margin: 10px;
 	padding: 4px;
-	
+}
+#doutorDir{
+	float: right;
+	background: #f1f7ff;
+	display: table;
+	margin: 10px;
+	padding: 4px;
 }
 #foto{
 	float: left;
