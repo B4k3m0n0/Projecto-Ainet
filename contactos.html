@@ -31,14 +31,14 @@
 
 
 		<body>
-
+			<div id="full">
 			<div id="headTop">
-				<div border=1 id="logo">
+				<div id="logo">
 					<a href="head.html"><img src="imagens\santa_casa1000.png" alt="logo" height="225" width="250"></a>
 				</div>
 
-				<div border=1 id="casaMerci">
-					<img src="imagens\santaCasa.jpg" alt="casa" height="200" width="500">
+				<div id="casaMerci">
+					<img src="imagens\santaCasa.jpg" alt="casa">
 				</div>
 
 				<div id="login">
@@ -232,7 +232,7 @@
 					<label for="data_nascimento">Data de Nascimento(aaaa-mm-dd) *</label>
 					<input type="text"  name="data_nascimento" id="data_nascimento" value="" size="10" maxlength="10" />
 					<br />
-					<label for="morada">Morada</label>	
+					<label for="morada" id="textA">Morada</label>	
 					<textarea name="morada" id="morada" rows="4" cols="40"></textarea>
 					<br />
 					<label for="cp">C&oacute;digo Postal</label>
@@ -254,7 +254,7 @@
 					<label for="num_beneficiario">N&uacute;mero de Benefici&aacute;rio</label>	
 					<input type="text" name="num_beneficiario" id="num_beneficiario" value="" size="40" maxlength="50" />
 					<br />
-					<label for="mensagem">Mensagem *</label>	
+					<label for="mensagem" id="textA">Mensagem *</label>	
 					<textarea name="mensagem" id="mensagem" rows="4" cols="40"></textarea>
 					<br />
 					<label for="forma_contacto">Forma preferencial de contacto</label>	
@@ -299,6 +299,7 @@
 					</div>
 
 				</div>
+			</div>
 			</div>
 		</body>
 		</html>
