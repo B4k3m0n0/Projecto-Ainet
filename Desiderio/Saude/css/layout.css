@@ -38,15 +38,32 @@ body {
 	width: 500px;
 	height: 400px;
 }
-#contactos{
-	background: #f1f7ff;
+#dir{
+	
 	margin: 10px;
     padding: 5px;
-	float: left;
+	display: block;
 	width: auto;
 	height: auto;
 	overflow: hidden;
 }
+#contactos{
+	background: #f1f7ff;
+	margin: 5px 10px;
+    padding: 5px;
+	width: auto;
+	height: auto;
+	overflow: hidden;
+}
+#noticias{
+	background: #f1f7ff;
+	margin: 202px 10px 10px;
+    padding: 5px;
+	width: auto;
+	height: auto;
+	overflow: hidden;
+}
+
 #doutorAcordos{
 	clear: both;
 	display: block;
@@ -81,7 +98,7 @@ body {
 	padding: 10px;
 }
 
-#botaoMarcar{
+#botao{
 	background: #d9e1ec;
 	padding: 3px;
 	margin-top: 15px;
@@ -90,4 +107,7 @@ body {
 }
 #acordos{
 	float: left;
+}
+#noticia a{
+	font-size: 10px;
 }
