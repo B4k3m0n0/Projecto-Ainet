@@ -52,13 +52,16 @@ body {
 	
 }
 .doutor{
-}
-.doutorInfo{
-
+	background: #FFFF00;
+	display: block;
 }
 .foto{
-
+	background: #EFD000;
+	float: left;
+	padding: 10px;
 }
 .doutorDados{
-
+	background: #DD00DD;
+	float: left;
+	padding: 10px;
 }
