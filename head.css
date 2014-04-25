@@ -214,6 +214,7 @@ body{
 }
 #medico{
 	padding-left: 400px;
+	clear: both;
 }
 
 #publicacaoContainer{
