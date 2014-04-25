@@ -26,30 +26,30 @@ body{
 }
 
 .pub{
+	float: left;
 	background-color: white;
 	border-radius: 10px; 
 	-moz-border-radius: 10px; 
 	-webkit-border-radius: 10px; 
 	border: 2px solid #104285;
 	padding: 10px 10px;
-	margin: 50px;
+	margin: 50px 20px;
 	overflow: auto;
     display: block;
     height: 375px;
-    width:250px;
-
+    width: 20%;
 }
 
 #publicacao1{
-	float: left;
+
 }
 
 #publicacao2{
-	float: left;
+
 }
 
 #publicacao3{
-	float: left;
+
 }
 
 #separador{
