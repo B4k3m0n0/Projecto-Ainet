@@ -1,33 +1,33 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml"><head>
-	<title>An XHTML 1.0 Strict standard template</title>
-	<meta http-equiv="content-type" content="text/html; charset=UTF-8">
-	<script type="text/javascript" src="js/jquery.js"></script>
-	<script type="text/javascript" src="js/easySlider1.7.js"></script>
-	<link rel="stylesheet" type="text/css" href="css.css" />
-	<script type="text/javascript">
-	$(document).ready(function(){	
-		$("#slider").easySlider({
-			auto: true, 
-			continuous: true,
-			numeric: true
-		});
-	});	
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
 
-	$(document).ready(function ()
-	{
+<head>
+	<title>Casa da Misericórdia de Leiria</title>
+	<meta http-equiv="content-type" content="text/html;charset=utf-8"/>
+	<link rel="stylesheet" type="text/css" href="head.css" />
 
-		$("#menu li").bind	("mouseenter mouseleave", function ()	{
-			$(this).toggleClass("over");
-		}
-		);
-	})
-	</script>
-	
-</head>
 
-<body>
-	<div id="headTop">
+	<script type="text/javascript" src="jquery.min.js"></script>
+	<script type="text/javascript" charset="UTF-8">
+			//<![CDATA[
+			$(document).ready(function ()
+			{
+
+				$("#menu li").bind	("mouseenter mouseleave", function ()	{
+					$(this).toggleClass("over");
+				}
+				);
+			})
+			
+			//]]
+			</script>
+		</head>
+
+
+		<body>
+
+			<div id="headTop">
 				<div border=1 id="logo">
 					<a href="head.html"><img src="imagens\santa_casa1000.png" alt="logo" height="225" width="250"></a>
 				</div>
@@ -125,51 +125,6 @@
 				</ul>
 				<p>________________________________________________________________________________________________________________________________________</p>
 			</div>
-<div id="container">
-
-	<div id="excertoPai">
-		<!-- <table id="excertoTable">
-			<tr>
-				<td>
-					teste
-				</td>
-			</tr>
-		</table> -->
-		<div id="slider">
-			<ul>				
-				<li><a><img src="images/santaCasa.jpg" alt="Css Template Preview" /></a></li>
-				<li><a><img src="images/santaCasa.jpg" alt="Css Template Preview" /></a></li>
-				<li><a><img src="images/santaCasa.jpg" alt="Css Template Preview" /></a></li>
-				<li><a><img src="images/santaCasa.jpg" alt="Css Template Preview" /></a></li>		
-			</ul>
-		</div>
-	</div>
-		
-		<div id="publicacaoContainer">
-			<article id="publicacao1" class="pub">
-				<h1>Excerto Teste</h1>
-				<span>Texto de Teste</span>
-			</article>
-			<article id="publicacao2" class="pub">
-				<h1>Excerto Teste</h1>
-				<span>Texto de Teste</span>
-			</article>
-			<article id="publicacao3" class="pub">
-				<h1>Excerto Teste</h1>
-				<span>Texto de Teste</span>
-			</article>
-		</div>
-
-	<div id="apresentacaoPai">
-		<article id="apresentacao" class="ap">
-			<h1>Apresentação:</h1>
-		</article>
-		<article id="valencias" class="ap">
-			<h1>Valências:</h1>
-		</article>
-	</div>
-</div>
-
 
 			<div  class="rodape">
 				<div  class="rodape_esq">
@@ -195,5 +150,5 @@
 						</div>
 
 					</div>
-</body>
-</html>
+				</body>
+				</html>
