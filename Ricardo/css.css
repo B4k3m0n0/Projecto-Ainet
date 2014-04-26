@@ -230,8 +230,8 @@ input, textarea{
 #menu {
 	width: 1250px;
 	height: 350px;
-	position: relative;
 }
+
 #menu ul{
 	list-style-type: none;
 }
@@ -351,3 +351,6 @@ input, textarea{
 	text-align: right;
 }
 
+input[type=submit]{
+	cursor: pointer;
+}
