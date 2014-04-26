@@ -121,13 +121,12 @@ body{
 	overflow:hidden; 
 }
 
-h1, span {
+h2, span {
 	font-family: verdana;
 }
 
-h1{
+h2{
 	color: rgba(28, 124, 183, 1);
-	text-align: center;
 }
 
 input, textarea, #botaoA{
@@ -357,7 +356,7 @@ input[type=submit]{
 	margin-right: 150px;
 }
 
-#botao_vermais{
+.border{
 	background: #d9e1ec;
 	padding: 3px;
 	margin-top: 15px;
