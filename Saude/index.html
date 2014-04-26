@@ -5,29 +5,27 @@
 <head>
 	<title>Saúde - Lista de Especialidades</title>
 	<meta http-equiv="content-type" content="text/html;charset=utf-8"/>
-	<link href="css/layout.css" type="text/css" rel="stylesheet">
-	<link href="css/menu.css" type="text/css" rel="stylesheet">
+	<link href="css/layout.css" type="text/css" rel="stylesheet"/>
+	<link href="css/menu.css" type="text/css" rel="stylesheet"/>
 
 	<script type="text/javascript" src="jquery.min.js"></script>
 	<script type="text/javascript">
-	//<![CDATA[
 	$(document).ready(function(){
 		$("#menu li").bind("mouseenter mouseleave", function (){
 			$(this).toggleClass("over");
 		});
 	});
-	//]]
 	</script>
 </head>
 <body>
 	<div id="full">
 		<div id="headTop">
 			<div id="logo">
-				<a href="head.html"><img src="imagens\santa_casa1000.png" alt="logo" height="225" width="250"></a>
+				<a href="head.html"><img src="imagens\santa_casa1000.png" alt="logo" height="225" width="250"/></a>
 			</div>
 
 			<div id="casaMerci">
-				<img src="imagens\santaCasa.jpg" alt="casa" height="200" width="500">
+				<img src="imagens\santaCasa.jpg" alt="casa" height="200" width="500"/>
 			</div>
 
 			<div id="login">
@@ -235,7 +233,7 @@
 								<p>Em</p>
 								<p>Breve</p>
 								<p>
-									<a href="#" id="botao" class="border">Ver Mais...</a>
+									<a href="#" class="border">Ver Mais...</a>
 								</p>
 							</div>
 						</div>
@@ -246,28 +244,28 @@
 					<div id="doutores">
 						<h2>Médicos Especializados:</h2>
 						<div id="doutorEsq" class="border">
-							<div id="foto" class="border">
+							<div id="fotoEsq" class="border">
 								<p>Foto</p>
 							</div>
-							<div id="doutorDados">
+							<div class="doutorDados">
 								<h3>Nome do medico</h3>
 								<p>Contacto:</p>
 								<p>E-mail: </p>
 								<p>
-									<a href="#" id="botao" class="border">Marcar Consulta</a>
+									<a href="#" class="border">Marcar Consulta</a>
 								</p>
 							</div>
 						</div>
 						<div id="doutorDir" class="border">
-							<div id="foto" class="border">
+							<div id="fotoDir" class="border">
 								<p>Foto</p>
 							</div>
-							<div id="doutorDados">
+							<div class="doutorDados">
 								<h3>Nome do medico</h3>
 								<p>Contacto:</p>
 								<p>E-mail: </p>
 								<p>
-									<a href="#" id="botao" class="border">Marcar Consulta</a>
+									<a href="#" class="border">Marcar Consulta</a>
 								</p>
 							</div>
 						</div>
@@ -307,20 +305,21 @@
 				<br/>
 			</div>
 			<div class="rodape_cen">
-				<a>Contactos</a>
+				<span>Contactos</span>
 				<br/>
-				<a>Geral: 123456789<a>
-					<br/>
-					<a href="rodape.html">Ver Todos</a>
+				<span>Geral: 123456789</span>
+				<br/>
+				<a href="rodape.html">Ver Todos</a>
+			</div>
+			<div class="rodape_dir">
+				<a>Desenvolvido por:<br/>
+					André Cristiano 2110112<br/>
+					Ricardo Ribeiro 2110129<br/>
+					Rodrigo Desidério 2070048<br/>
+					Todos os direitos reservados, 2014</a>
 				</div>
-				<div class="rodape_dir">
-						<a>Desenvolvido por:<br/>
-							André Cristiano 2110112<br/>
-							Ricardo Ribeiro 2110129<br/>
-							Rodrigo Desidério 2070048<br/>
-							Todos os direitos reservados, 2014</a>
-					</div>
 
-				</div>
-			</body>
-			</html>
+			</div>
+		</div>
+	</body>
+	</html>
