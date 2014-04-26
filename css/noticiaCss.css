@@ -29,7 +29,6 @@ body {
 	float: left;
 	width: 50%;
 	height: 500px;
-	position: relative;
 }
 
 #noticiaImg{
@@ -41,14 +40,12 @@ body {
 	float: left;
 	width: 50%;
 	/*height: 400px;*/
-	position: relative;
 }
 
 #autores{
 	float: right;
 	width: 50%;
 	height: 100px;
-	position: relative;
 }
 
 input, textarea{

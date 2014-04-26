@@ -13,6 +13,7 @@ body{
 	clear: both;
 	width: 1200px;
 	vertical-align: baseline;
+
 }
 
 #excertoPai{
@@ -126,6 +127,7 @@ h1, span {
 
 h1{
 	color: rgba(28, 124, 183, 1);
+	text-align: center;
 }
 
 input, textarea{
@@ -338,4 +340,11 @@ ol#controls li a:focus, #prevBtn a:focus, #nextBtn a:focus{outline:none;}
 
 input[type=submit]{
 	cursor: pointer;
+}
+
+
+#botao{
+	font-size: 20px;
+	text-align: center;
+	width: 250px;
 }
