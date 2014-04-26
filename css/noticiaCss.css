@@ -15,6 +15,14 @@ body {
 	vertical-align: baseline;
 }
 
+#containerN{
+	margin:auto auto;
+	clear: both;
+	width: 1200px;
+	vertical-align: baseline;
+	padding-left: 300px;
+}
+
 #titulo{
 	width: 100%;
 	height: 60px;
