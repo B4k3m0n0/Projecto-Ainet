@@ -18,15 +18,13 @@ $(document).ready(function ()
 })
 </script> -->
 
-<script src="jqueryCalendar/jquery-1.6.2.min.js"></script>
-<script src="jqueryCalendar/jquery-ui-1.8.15.custom.min.js"></script>
-<link rel="stylesheet" href="jqueryCalendar/jqueryCalendar.css">
-<script>
-//<![CDATA[
+<script type="text/javascript" src="jqueryCalendar/jquery-1.6.2.min.js"></script>
+<script type="text/javascript" src="jqueryCalendar/jquery-ui-1.8.15.custom.min.js"></script>
+<link rel="stylesheet" href="jqueryCalendar/jqueryCalendar.css" />
+<script type="text/javascript">
 jQuery(function() {
 	jQuery("#data").datepicker();
 });
-//]]
 </script>
 
 </head>
@@ -35,7 +33,7 @@ jQuery(function() {
 	<div id="full">
 		<div id="headTop">
 			<div id="logo">
-				<a href="head.html"><img src="imagens\santa_casa1000.png" alt="logo" height="225" width="250"></a>
+				<a href="head.html"><img src="imagens\santa_casa1000.png" alt="logo" height="225" width="250" /></a>
 			</div>
 
 			<div id="casaMerci">
@@ -140,73 +138,72 @@ jQuery(function() {
 						<tr>
 							<td>
 								<label for="nome" id="nome">Título *</label>	
-								<br>
+								<br/>
 								<input type="text" name="titulo" id="tituloInput" value=""  />	
 							</td>
 						</tr>
 						<tr>
 							<td>
-								<br>
+								<br/>
 								<label for="resumo" id="resumo">Resumo *</label>
-								<br>
-								<textarea rows="4" cols="50" id="resumo" name="resumo"></textarea>
-								<br>						
+								<br/>
+								<textarea rows="4" cols="50" id="resumoT" name="resumo"></textarea>
+								<br/>						
 							</td>
 						</tr>
 						<tr>
 							<td>
 								<label for="corpo" id="textA">Corpo de Texto</label>	
-								<br>
+								<br/>
 								<textarea name="corpo" id="corpo" rows="7" cols="80"></textarea>
 							</td>
 						</tr>
 						<tr>
 							<td>
 								<label>Imagem:</label>
-								<br>
-								<input type="file" name="pic" accept="image/*" name="imagem">		
+								<br/>
+								<input type="file" name="pic" accept="image/*" />		
 							</td>
 						</tr>
 						<tr>
 							<td>
-								<label for="autores">Autores</label>	
-								<br>
+								<label>Autores</label>	
+								<br/>
 								<input type="text" name="autores" id="autoresInput" value="" size="40" maxlength="80" />	
-								<br>	
+								<br/>	
 							</td>
 						</tr>
 						<tr>
 							<td>
 								<label for="data">Data *</label>
-								<br>
-								<input type="text" name="data" id="data" value="" size="10" maxlength="10">
-								<br>
+								<br/>
+								<input type="text" name="data" id="data" value="" size="10" maxlength="10" />
+								<br/>
 							</td>
 						</tr>
 						<tr>
 							<td>
 								<label for="Especialidade">Especialidade</label>
-								<br>	
+								<br/>	
 								<select name="Especialidade" id="Especialidade">
 									<option value="">--- Seleccione ---</option>
 									<option  value="1">teste1</option>
 									<option  value="2">teste2</option>
 									<option  value="3">teste3</option>
 								</select>			
-								<br>
+								<br/>
 							</td>
 						</tr>
 					</tbody>
 				</table>
-				<br>
-				<table>
+				<table id="tableBotoes">
 					<tbody>
 						<tr>
 							<td>
-								<input type="reset" value="Limpar" class="btn">
+								<input type="reset" value="Limpar" class="btn"/>
 							</td>
 							<td>
-								<input type="submit" value="Submeter" class="btn">
+								<input type="submit" value="Submeter" class="btn"/>
 							</td>
 						</tr>
 					</tbody>
@@ -238,21 +235,20 @@ jQuery(function() {
 				<br/>
 			</div>
 			<div class="rodape_cen">
-				<a>Contactos</a>
+				<span>Contactos</span>
 				<br/>
-				<a>Geral: 123456789<a>
-					<br/>
-					<a href="rodape.html">Ver Todos</a>
+				<span>Geral: 123456789</span>
+				<br/>
+				<a href="rodape.html">Ver Todos</a>
+			</div>
+			<div class="rodape_dir">
+				<a>Desenvolvido por:<br/>
+					André Cristiano 2110112<br/>
+					Ricardo Ribeiro 2110129<br/>
+					Rodrigo Desidério 2070048<br/>
+					Todos os direitos reservados, 2014</a>
 				</div>
-				<div class="rodape_dir">
-					<a>Desenvolvido por:<br/>
-						André Cristiano 2110112<br/>
-						Ricardo Ribeiro 2110129<br/>
-						Rodrigo Desidério 2070048<br/>
-						Todos os direitos reservados, 2014</a>
-					</div>
 
-				</div>
 			</div>
 		</div>
 	</body>
