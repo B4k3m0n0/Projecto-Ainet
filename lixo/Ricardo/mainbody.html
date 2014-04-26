@@ -1,40 +1,36 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
-	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+	<title>An XHTML 1.0 Strict standard template</title>
+	<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+	<script type="text/javascript" src="js/jquery.js"></script>
+	<script type="text/javascript" src="js/easySlider1.7.js"></script>
+	<link rel="stylesheet" type="text/css" href="css.css" />
+	<script type="text/javascript">
+	$(document).ready(function(){	
+		$("#slider").easySlider({
+			auto: true, 
+			continuous: true,
+			numeric: true
+		});
+	});	
 
-<head>
-	<title>Casa da Misericórdia de Leiria</title>
-	<meta http-equiv="content-type" content="text/html;charset=utf-8"/>
-	<link rel="stylesheet" type="text/css" href="css/index.css" />
-
-	<script type="text/javascript" src="jquery.min.js"></script>
-	<script type="text/javascript" charset="UTF-8">
-			//<![CDATA[
-			$(document).ready(function ()
-			{
-
-				$("#menu li").bind	("mouseenter mouseleave", function ()	{
-					$(this).toggleClass("over");
-				}
-				);
-			})
-
-			
-			//]]
-			</script>
-
+	$(document).ready(function(){
+		$("#menu li").bind("mouseenter mouseleave", function (){
+			$(this).toggleClass("over");
+		});
+	});
+	</script>
+	
 </head>
-
-
 
 <body>
 	<div id="full">
 	<div id="headTop">
-		<div border=1 id="logo">
+		<div id="logo">
 			<a href="head.html"><img src="imagens\santa_casa1000.png" alt="logo" height="225" width="250"></a>
 		</div>
 
-		<div border=1 id="casaMerci">
+		<div id="casaMerci">
 			<img src="imagens\santaCasa.jpg" alt="casa" height="200" width="500">
 		</div>
 
@@ -58,9 +54,7 @@
 
 			</form>
 		</div>
-
 	</div>
-
 	<div id="menu">
 		<p>________________________________________________________________________________________________________________________________________</p>
 		<ul id="barraNav">
@@ -128,70 +122,67 @@
 		</ul>
 		<p>________________________________________________________________________________________________________________________________________</p>
 	</div>
+	<div id="container">
 
-
-	<div id="medico">
-		<table class="tg">
+		<div id="excertoPai">
+		<!-- <table id="excertoTable">
 			<tr>
-				<th class="nome" colspan="3"><p> Dr. Secundino de Freitas</p></th>
-			</tr>
-			<tr>
-				<td class="foto" rowspan="2"><img src="imagens/exemplo.png" height=210px width=210px></td>
-			</tr>
-			<tr>
-				<td class="especialidade" colspan="2" style="padding-left: 40px;" >
-					<select >
-						<option value="teste1">Especialidade 1</option>
-						<option value="teste2">Especialidade 2</option>
-						<option value="teste3">Especialidade 3</option>
-					</select>
-					<br /></br/>
-					<span>Disponibilidade:</span>
-					<br /><br />
-					<span>Segundas: </span>
-					<span>13 às 16</span>
-					<br />
-					<span>Terças: </span>
-					<br />
-					<span>Quartas: </span>
-					<br />
-					<span>Quintas: </span>
-					<br />
-					<span>Sextas: </span>
-					<br />
-					<span>Sábados: </span>
-					<br />
-					<br>
-					<input type="submit" value="Marcar Consulta" />
+				<td>
+					teste
 				</td>
 			</tr>
-		</table>	
+		</table> -->
+		<div id="slider">
+			<ul>				
+				<li><a><img src="images/santaCasa.jpg" alt="Css Template Preview" /></a></li>
+				<li><a><img src="images/santaCasa.jpg" alt="Css Template Preview" /></a></li>
+				<li><a><img src="images/santaCasa.jpg" alt="Css Template Preview" /></a></li>
+				<li><a><img src="images/santaCasa.jpg" alt="Css Template Preview" /></a></li>		
+			</ul>
+		</div>
 	</div>
-
 
 	<div id="publicacaoContainer">
-		<article id="publicacao1" class="pub"></article>
-		<article id="publicacao2" class="pub"></article>
-		<article id="publicacao3" class="pub"></article>
-
+		<article id="publicacao1" class="pub">
+			<h1>Excerto Teste</h1>
+			<span>Texto de Teste</span>
+		</article>
+		<article id="publicacao2" class="pub">
+			<h1>Excerto Teste</h1>
+			<span>Texto de Teste</span>
+		</article>
+		<article id="publicacao3" class="pub">
+			<h1>Excerto Teste</h1>
+			<span>Texto de Teste</span>
+		</article>
 	</div>
 
-	<div  class="rodape">
-		<div  class="rodape_esq">
-			<a href="rodape.html">Newsletter</a>
-			<br/>
-			<a>Localização</a>
-			<br/>
-			<a>Noticias</a>
-			<br/>
-			<a>Mapa do Site</a>
-			<br/>
-		</div>
-		<div class="rodape_cen">
-			<a>Contactos</a>
-			<br/>
+	<div id="apresentacaoPai">
+		<article id="apresentacao" class="ap">
+			<h1>Apresentação:</h1>
+		</article>
+		<article id="valencias" class="ap">
+			<h1>Valências:</h1>
+		</article>
+	</div>
+</div>
 
-			</html>	<a>Geral: 123456789<a>
+
+<div  class="rodape">
+	<div  class="rodape_esq">
+		<a href="rodape.html">Newsletter</a>
+		<br/>
+		<a>Localização</a>
+		<br/>
+		<a>Noticias</a>
+		<br/>
+		<a>Mapa do Site</a>
+		<br/>
+	</div>
+	<div class="rodape_cen">
+		<a>Contactos</a>
+		<br/>
+		<a>Geral: 123456789<a>
 			<br/>
 			<a href="rodape.html">Ver Todos</a>
 		</div>
@@ -201,6 +192,5 @@
 			</div>
 
 		</div>
-	</div>
-	</div>
 	</body>
+	</html>
