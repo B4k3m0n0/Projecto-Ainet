@@ -26,6 +26,16 @@
 			//]]
 			</script>
 
+			<script type="text/JavaScript" src="SCRIPT.JS"></script>
+
+			<script src="jqueryCalendar/jquery-1.6.2.min.js"></script>
+			<script src="jqueryCalendar/jquery-ui-1.8.15.custom.min.js"></script>
+			<link rel="stylesheet" href="jqueryCalendar/jqueryCalendar.css">
+			<script>
+			jQuery(function() {
+				jQuery("#data_nascimento").datepicker();
+			});
+	</script>
 		</head>
 
 
@@ -201,105 +211,191 @@
 				<div id="conteudoAux">
 					<br/><br/><br/>
 					<h1>Formulário de Contacto: </h1>
-					<label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(*) campos obrigatórios</label>
 				</div>
+
+
 				<div id="conteudo2">
-					<div class="formulario">
-						<form>
+					<p>(*) Campos Obrigatorios</p>
 
-							<br />
-							<label for="tipo_id">Tipo Contacto *</label>
-							<select name="tipo_id" id="tipo_id">
-								<option value="">--- Seleccione ---</option>
-								<option  value="1">Contacto</option>
-								<option  value="4">Emprego</option>
-								<option  value="5">Inscrição como Irmão (ã)</option>
-								<option  value="3">Inscrições de Utentes</option>
-								<option  value="6">Outro</option>
-								<option  value="2">Voluntariado</option>
-							</select>
-							<br />
-							<label for="nome">Nome *</label>	
-							<input type="text" name="nome" id="nome" value="" size="40" maxlength="150" />
-							<br />
-							<label for="sexo">Sexo *</label>
-							<select name="sexo" id="sexo">
-								<option value="">--- Seleccione ---</option>
-								<option  value="Masculino">Masculino</option>
-								<option  value="Feminino">Feminino</option>
-							</select>	
-							<br />
-							<label for="data_nascimento">Data de Nascimento(aaaa-mm-dd) *</label>
-							<input type="text"  name="data_nascimento" id="data_nascimento" value="" size="10" maxlength="10" />
-							<br />
-							<label for="morada" id="textA">Morada</label>	
-							<textarea name="morada" id="morada" rows="4" cols="40"></textarea>
-							<br />
-							<label for="cp">C&oacute;digo Postal</label>
-							<input type="text" name="cp" id="cp" value="" size="20" maxlength="8" />
-							<br />
-							<label for="localidade">Localidade</label>	
-							<input type="text" name="localidade" id="localidade" value="" size="40" maxlength="80" />
-							<br />
-							<label for="telef">Tel./Telem *</label>	
-							<input type="text" name="telef" id="telef" value="" size="20" maxlength="20" />
+					<form action="" class="formulario" onsubmit="return valida();">
+						<table>
+							<tbody>
+								<tr>
+									<td>
+										<label for="tipo_id">Tipo Contacto *</label>
+										<br>
+										<select name="tipo_id" id="tipo_id">
+											<option value="">--- Seleccione ---</option>
+											<option  value="1">Contacto</option>
+											<option  value="4">Emprego</option>
+											<option  value="5">Inscrição como Irmão (ã)</option>
+											<option  value="3">Inscrições de Utentes</option>
+											<option  value="6">Outro</option>
+											<option  value="2">Voluntariado</option>
+										</select>
 
-							<br />
-							<label for="email">E-mail *</label>
-							<input type="text" name="email" id="email" value="" size="40" maxlength="100" />
-							<br />
-							<label for="sistema_saude">Susbsistema de Sa&uacute;de</label>	
-							<input type="text" name="sistema_saude" id="sistema_saude" value="" size="40" maxlength="80" />
-							<br />
-							<label for="num_beneficiario">N&uacute;mero de Benefici&aacute;rio</label>	
-							<input type="text" name="num_beneficiario" id="num_beneficiario" value="" size="40" maxlength="50" />
-							<br />
-							<label for="mensagem" id="textA">Mensagem *</label>	
-							<textarea name="mensagem" id="mensagem" rows="4" cols="40"></textarea>
-							<br />
-							<label for="forma_contacto">Forma preferencial de contacto</label>	
-							<select name="forma_contacto" id="forma_contacto">
-								<option value="">--- Seleccione ---</option>
-								<option  value="1">Tel./Telem</option>
-								<option  value="2">E-mail</option>
-								<option  value="3">CTT</option>
-							</select>
-							<br />
-							<input type="reset" value="Limpar"  class="btn">
-							<input type="submit"  value="Enviar"  class="btn">
-							<br />
-						</form>
-					</div>
-				</div>
-				<div id="total">
-				</div>
-			</div>
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<label for="nome" id="nome">Nome *</label>	
+										<br>
+										<input type="text" name="nome" id="nome" value="" size="40" maxlength="150" />	
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<label for="sexo" id="sexo">Sexo *</label>
+										<br>
+										<select name="sexo" id="sexo">
+											<option value="">--- Seleccione ---</option>
+											<option  value="Masculino">Masculino</option>
+											<option  value="Feminino">Feminino</option>
+										</select>	
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<br>
+										<label for="data_nascimento" id="data_nascimento">Data de Nascimento(dd-mm-aaaa) *</label>
+										<br>
+										<input type="text" name="data_nascimento" id="data_nascimento" value="" size="10" maxlength="10">
+										<br>						
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<label for="morada" id="textA">Morada</label>	
+										<br>
+										<textarea name="morada" id="morada" rows="4" cols="40"></textarea>
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<label for="cp">C&oacute;digo Postal</label>
 
-			<div  class="rodape">
-				<div  class="rodape_esq">
-					<a href="rodape.html">Newsletter</a>
-					<br/>
-					<a>Localização</a>
-					<br/>
-					<a>Noticias</a>
-					<br/>
-					<a>Mapa do Site</a>
-					<br/>
+										<br>			
+										<input type="text" name="cp" id="cp" value="" size="20" maxlength="8" />			
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<label for="localidade">Localidade</label>	
+										<br>
+										<input type="text" name="localidade" id="localidade" value="" size="40" maxlength="80" />	
+										<br>	
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<label for="telef" id="tel">Tel./Telem *</label>	
+										<br>
+										<input type="text" name="telef" id="telef" value="" size="20" maxlength="20" />
+										<br>
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<label for="email" id="email">E-mail *</label>
+										<br>
+										<input type="text" name="email" id="email" value="" size="40" maxlength="100" />			
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<label for="sistema_saude">Susbsistema de Sa&uacute;de</label>	
+										<br>
+										<input type="text" name="sistema_saude" id="sistema_saude" value="" size="40" maxlength="80" />			
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<label for="num_beneficiario">N&uacute;mero de Benefici&aacute;rio</label>	
+										<br>
+										<input type="text" name="num_beneficiario" id="num_beneficiario" value="" size="40" maxlength="50" />		
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<label for="mensagem" id="textA">Mensagem *</label>	
+										<br>
+										<textarea name="mensagem" id="mensagem" rows="4" cols="40"></textarea>			
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<label for="forma_contacto">Forma preferencial de contacto</label>
+										<br>	
+										<select name="forma_contacto" id="forma_contacto">
+											<option value="">--- Seleccione ---</option>
+											<option  value="1">Tel./Telem</option>
+											<option  value="2">E-mail</option>
+											<option  value="3">CTT</option>
+										</select>			
+										<br>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+						<br>
+						<table>
+							<tbody>
+								<tr>
+									<td>
+										<input type="reset" value="Limpar" class="btn">
+									</td>
+									<td>
+										<input type="submit" value="Submeter" class="btn">
+									</td>
+								</tr>
+							</tbody>
+						</table>
+					</form>	
 				</div>
-				<div class="rodape_cen">
-					<a>Contactos</a>
-					<br/>
-					<a>Geral: 123456789<a>
+
+				<script type="text/javascript">
+				function valida(){
+					var grava=true;
+					if (_strip_whitespace(document.getElementById('nome').value)=='') { alert('Tem de introduzir (Nome)!'); grava=false; }
+					else  if (_strip_whitespace(document.getElementById('data_nascimento').value)=='') { alert('Tem de introduzir (Data de Nascimento)!'); grava=false; }
+					else  if (_strip_whitespace(document.getElementById('email').value)!='' && !valida_email(document.getElementById('email').value)) { alert('O campo (E-mail) tem de ser válido!'); grava=false; }
+					else  if (_strip_whitespace(document.getElementById('tel').value)=='') { alert('Tem de introduzir (Telefone)!'); grava=false; }	
+					else  if (_strip_whitespace(document.getElementById('tipo_id').value)=='') { alert('Tem de seleccionar um (tipo de contacto)!'); grava=false; }
+					else  if (_strip_whitespace(document.getElementById('sexo').value)=='') { alert('Tem de seleccionar um (sexo)!'); grava=false; }
+					else  if (_strip_whitespace(document.getElementById('mensagem').value)=='') { alert('Tem de introduzir (mensagem)!'); grava=false; }
+					alert ('Inserido com Sucesso!');
+					return grava;
+				}
+				</script>
+				<noscript>
+					É necessário activar o javascript no seu browser.
+				</noscript>
+
+				<div  class="rodape">
+					<div  class="rodape_esq">
+						<a href="rodape.html">Newsletter</a>
 						<br/>
-						<a href="rodape.html">Ver Todos</a>
+						<a>Localização</a>
+						<br/>
+						<a>Noticias</a>
+						<br/>
+						<a>Mapa do Site</a>
+						<br/>
 					</div>
-					<div class="rodape_dir">
-						<a>Desenvolvido por: nós próprios<br/>
-							Todos os direitos reservados, 2014</a>
+					<div class="rodape_cen">
+						<a>Contactos</a>
+						<br/>
+						<a>Geral: 123456789<a>
+							<br/>
+							<a href="rodape.html">Ver Todos</a>
 						</div>
+						<div class="rodape_dir">
+							<a>Desenvolvido por: nós próprios<br/>
+								Todos os direitos reservados, 2014</a>
+							</div>
 
+						</div>
 					</div>
 				</div>
-			</div>
-		</body>
-		</html>
+			</body>
+			</html>
