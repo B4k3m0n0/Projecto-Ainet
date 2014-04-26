@@ -218,7 +218,6 @@ body {
 #menu ul li ul li a {
 	clear: both;
 	margin-left: 4px;
-	position: relative;
 	width: 140px;
 	background-color: white;
 	left: -45px;
