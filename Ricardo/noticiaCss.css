@@ -51,7 +51,7 @@ body {
 	position: relative;
 }
 
-input, textarea, #cancel{
+input, textarea{
 	border: 5px solid white; 
 	-webkit-box-shadow: 
 	inset 0 0 8px  rgba(0,0,0,0.1),
@@ -76,12 +76,7 @@ textarea {
 	vertical-align: top;
 }
 
-#cancel{
-	text-decoration: none;
-	color: black;
-}
-
-#submeter, input[type=submit]{
+#submeter, input[type=submit], .btn{
 	cursor: pointer;
 }
 
