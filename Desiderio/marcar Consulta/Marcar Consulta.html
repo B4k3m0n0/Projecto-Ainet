@@ -7,6 +7,9 @@
 	<meta http-equiv="content-type" content="text/html;charset=utf-8"/>
 	<style type="text/css">@import url(classes/jscalendar/calendar-win2k-cold-1.css);</style>
 	<link rel="stylesheet" type="text/css" href="css/style.css">
+	
+	<script type="text/JavaScript" src="js/SCRIPT.JS"></script>
+	
 	<script src="jqueryCalendar/jquery-1.6.2.min.js"></script>
 	<script src="jqueryCalendar/jquery-ui-1.8.15.custom.min.js"></script>
 	<link rel="stylesheet" href="jqueryCalendar/jqueryCalendar.css">
@@ -18,15 +21,15 @@
 	</script>
 <body>
     <div id="container">
-		<div id="head">
+		<div>
 			<h3>Marcação de Consultas</h3>
 		</div>
 		<p>"Aqui pode efetuar o pedido de marcação de uma consulta. <br>
 			Este  procedimento carece de validação.<br>
 			Obrigado!"<br>
 		</p>
-		<form action="">
-			<table class="formulario">
+		<form action="" class="formulario" onsubmit="return valida();">
+			<table>
 				<tbody>
 					<tr>
 						<td>
@@ -123,13 +126,13 @@
 					</tr>
 				</tbody>
 			</table>
-			<table class="botoesform">
+			<table>
 				<tbody>
 					<tr>
-						<td align="center">
+						<td>
 							<input type="reset" value="Limpar" class="btn">
 						</td>
-						<td align="center">
+						<td>
 							<input type="submit" value="Submeter" class="btn">
 						</td>
 					</tr>
@@ -140,16 +143,16 @@
 				<strong>Nota:</strong> No dia da consulta deve ser portador dos Meios Complementares de Diagnóstico e/ou Terapêutica recentes que dispuser.<br>
 					Deve ser igualmente portador do Cartão de Utente do SNS e/ou do Cartão da Entidade Financeira Responsável (Termos de Responsabilidade e/ou Credenciais, quando aplicável).
 			</div>
-			<input type="hidden" name="_comp" value="">
-			<input type="hidden" name="id" value="1643">
 		</form>		
 		<script type="text/javascript">
 			function valida(){
 				var grava=true;
 				if (_strip_whitespace(document.getElementById('nome').value)=='') { alert('Tem de introduzir (Nome)!'); grava=false; }
 					else  if (_strip_whitespace(document.getElementById('data_nascimento').value)=='') { alert('Tem de introduzir (Data de Nascimento)!'); grava=false; }
-					else  if (_strip_whitespace(document.getElementById('email').value)!='' && !valida_email(document.getElementById('email').value)) { alert('O campo (E-mail) tem de ser v�lido!'); grava=false; }
+					else  if (_strip_whitespace(document.getElementById('email').value)!='' && !valida_email(document.getElementById('email').value)) { alert('O campo (E-mail) tem de ser válido!'); grava=false; }
 					else  if (_strip_whitespace(document.getElementById('telef').value)=='') { alert('Tem de introduzir (Telefone)!'); grava=false; }	
+					else  if (_strip_whitespace(document.getElementById('consulta_id').value)=='') { alert('Tem de seleccionar a Consulta pretendida!'); grava=false; }
+				alert ('Inserido com Sucesso!');
 				return grava;
 			}
 		</script>
