@@ -118,7 +118,7 @@ h1{
 
 #formLogin {
 	width: 200px;
-	padding-top: 50px;
+	padding-top: 20px;
 }
 
 #menu {
@@ -245,4 +245,18 @@ h1{
 
 #tableBotoes{
 	padding-top: 20px;
+}
+
+h1, h2, span {
+	font-family: verdana;
+}
+
+h2{
+	color: rgba(28, 124, 183, 1);
+	text-align: center;
+}
+
+h1{
+	color: rgba(28, 124, 183, 1);
+	text-align: center;
 }

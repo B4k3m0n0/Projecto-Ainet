@@ -268,3 +268,12 @@ input[type=submit]{
 	color: black;
 	border-radius: 10px;
 }
+
+h2, h1, span {
+	font-family: verdana;
+}
+
+h2, h1{
+	color: rgba(28, 124, 183, 1);
+	text-align: center;
+}
