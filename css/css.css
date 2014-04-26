@@ -356,3 +356,14 @@ input[type=submit]{
 	float: right;
 	margin-right: 150px;
 }
+
+#botao_vermais{
+	background: #d9e1ec;
+	padding: 3px;
+	margin-top: 15px;
+	float: right;
+	font-weight: bold;
+	text-decoration: none;
+	color: black;
+	border-radius: 10px;
+}
