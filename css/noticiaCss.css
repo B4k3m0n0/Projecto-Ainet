@@ -109,6 +109,12 @@ h1{
 	padding-left: 11%;
 	padding-top: 15px;
 } 
+
+#casaMerci img {
+	height:205px;
+	width:530px;
+}
+
 #login {
 	float: left;
 	top:0;
